@@ -1,9 +1,8 @@
 # https://www.youtube.com/watch?v=H2EJuAcrZYU 3.39
 
 
-
-x = True
-y = False
+x = False
+y = True
 z = True
 
 # Here we are saying y is NOT true
