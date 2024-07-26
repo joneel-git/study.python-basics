@@ -49,3 +49,9 @@ if running:
     print("\nThe game is running")
 else:
     print("\nThe game is over..")
+
+# TIP setting multiple variables same value
+x = y = z = 0
+print(x)
+print(y)
+print(z)
