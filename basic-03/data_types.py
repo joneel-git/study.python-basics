@@ -21,7 +21,6 @@ print(f"\nYour GPA is {gpa}")
 print(f"You ran {distance} Km")
 print(f"The price is ${price}")
 
-
 # STRING
 # A string is a sequence of characters, like words or sentences
 name = "dude bro"  # Example: A person's name
@@ -32,11 +31,9 @@ print(f"\nYour name is {name}")
 print(f"My favorite food is {food}")
 print(f"My email is {email}")
 
-
 # BOOLEAN
 # A boolean is like a light switch, it can be either on (True) or off (False)
 # It represents whether something is happening or not
-
 online = True  # Example: Whether you are online
 for_sale = True  # Example: Whether an item is for sale
 running = False  # Example: Whether a process is running
