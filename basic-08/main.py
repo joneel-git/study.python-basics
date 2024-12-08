@@ -1,3 +1,4 @@
+# https://www.youtube.com/watch?v=MvzK9Oguxcg  Watch this for references
 import customtkinter as ctk
 
 # Sets the appearence mode of the application
@@ -9,15 +10,21 @@ ctk.set_default_color_theme("blue")
 
 class App(ctk.CTk):
     # Layout of the GUI will be written in the init itself
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
+    def __init__(self):
+        super().__init__()  # Call the parent class's constructor
         
         # Sets the title of our window to "App"
         # All we done so far is just displaying a title and 
         # Giving height and width of the app
-        self.title("App")
+        self.title("App")  # Use self to refer to the current instance
         # Dimensions of the window will be 200x200
         self.geometry("200x200")
+
+        # Example of making a label in this code base
+        self.label = ctk.CTkLabel(
+            self, text="Hello self as root label"
+        )
+        self.label.pack(pady=20, padx=20)
 
 if __name__ == "__main__":
     app = App()
