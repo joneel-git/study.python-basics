@@ -12,17 +12,17 @@ cursor = mydb.cursor()
 
 # Check if Database Exists
 cursor.execute("SHOW DATABASES")
-databases = cursor.fetchall()
+db = cursor.fetchall()
 
 database_exists = False
-for database in databases:
+for database in db:
     if "mydatabase" in database:
         database_exists = True
         break
 
 if database_exists:
     print("Database exists")
-    for x in databases:
+    for x in db:
         print(x)
 else:
     print("Database does not exist")
