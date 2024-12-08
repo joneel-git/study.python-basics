@@ -12,6 +12,11 @@ class App(ctk.CTk):
     # Layout of the GUI will be written in the init itself
     def __init__(self):
         super().__init__()  # Call the parent class's constructor
+
+        # when you create a label (or any other widget) inside a class, 
+        # you use self to refer to the instance of that class. 
+        # This allows you to access the label later if you need to update it 
+        # or manipulate it in some way.
         
         # Sets the title of our window to "App"
         # All we done so far is just displaying a title and 
